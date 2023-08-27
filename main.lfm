@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmFichaTeste" formType="sheetTemplate" dataType="DATA_TYPE_AQUI" title="Naruto No Atarashi Ninja Paradise">
+    <tabControl align="client">
+        <tab title="Informações">
+            <import file="1.lfm"/>
+        </tab>
+        <tab title="status">
+            <import file="2.lfm"/>
+        </tab>
+    </tabControl>
+</form>

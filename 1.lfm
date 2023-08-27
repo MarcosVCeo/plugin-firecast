@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form 
+    formType="sheetTemplate" 
+    dataType="DATA_TYPE_AQUI" 
+    title="Naruto No Atarashi Ninja Paradise" 
+    name="frmFichaTeste1" 
+    align="client"
+>
+
+    <style>
+        flowPart {
+            margins: {left=5, right=5, top=5, bottom=5};
+        }
+    </style>
+
+    <flowLayout 
+        align="client"
+        horzAlign="leading"
+        lineSpacing="16.0"
+        margins="{left=20, top=20, bottom=20, right=20}"
+        maxControlsPerLine="2"
+    >   
+
+        <flowPart
+            vertAlign="leading"
+            name="imagem_avatar" 
+            maxWidth="256.0" 
+            height="410" 
+            margins="{left=10, top=0, bottom=0, right=0}"
+        >
+            <image
+                width="256" 
+                height="410"
+                style="autoFit"
+                src="https://s2-techtudo.glbimg.com/uC8istX2sf9KQG_hMw4aenaHEiU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/6/Z/BtyF8UT5aeLFwmccA9CQ/fotonaruto2.jpg"
+                editable="true"/>
+        </flowPart> 
+
+        <flowPart height="800" maxWidth="1024">
+
+            <flowLayout align="client" maxControlsPerLine="1" horzAlign="leading">
+
+                <flowPart vertAlign="trailing" maxWidth="768.0" >
+                    <label align="left" text="Nome" fontSize="36"/>
+                    <edit align="client" fontSize="36"/>
+                </flowPart>
+
+                <flowPart vertAlign="trailing" maxWidth="768.0" >
+                    <label align="left" text="Idade" fontSize="36"/>
+                    <edit align="left" fontSize="36"/>
+                    <label align="left" text="Vila Natal" fontSize="36" autoSize="true" wordWrap="false" margins="{left=20, top=0, bottom=0, right=20}"/>
+                    <edit align="left"  width="360" fontSize="36"/>
+                </flowPart>
+
+                <flowPart vertAlign="trailing" maxWidth="768.0">
+                    <label align="left" text="Clã" fontSize="36"/>
+                    <comboBox 
+                        align="left" 
+                        items="{'Aburame', 'Hyuga', 'Inuzuka', 'Sarutobi', 'Senju', 'Uchiha', 'Uzumaki', 'Nara', 'Akimichi', 'Yamanaka'}" 
+                        width="128" 
+                        fontSize="18"
+                    />
+                    <label 
+                        align="left" 
+                        text="Elemento Base" 
+                        autoSize="true" 
+                        wordWrap="false" 
+                        margins="{left=20, top=0, bottom=0, right=20}" 
+                        fontSize="36"
+                    />
+                    <comboBox
+                        name="comboBoxElemento"
+                        align="left"
+                        items="{'', 'Ar', 'Fogo', 'Agua', 'Terra', 'Raio'}"
+                        values="{'', 'Ar', 'Fogo', 'Agua', 'Terra', 'Raio'}" 
+                        value="nil"
+                        width="128"
+                        fontSize="18"
+                        field="comboBoxElemento"
+                    />
+
+                    <image 
+                        align="client"
+                        field="imagemElemento" 
+                        width="36" 
+                        height="36" 
+                        editable="true" 
+                        visible="true" 
+                    />
+
+                    <dataLink field="comboBoxElemento">
+                        <event name="onChange">
+                            local selecionado = sheet.comboBoxElemento;
+
+                            if selecionado == "Fogo" then
+                                sheet.imagemElemento = 'http://blob.firecast.com.br/blobs/TGIRASND_2834522/fogo.png'      
+                            elseif selecionado == "Ar" then
+                                sheet.imagemElemento = 'http://blob.firecast.com.br/blobs/HILRQTLW_2834525/vento.png';
+                            elseif selecionado == "Agua" then
+                                sheet.imagemElemento = 'http://blob.firecast.com.br/blobs/CVQUSJII_2834528/agua.png'
+                            elseif selecionado == "Raio" then
+                                sheet.imagemElemento = 'http://blob.firecast.com.br/blobs/DQQGAJGD_2834523/raio.png';
+                            elseif selecionado == "Terra" then
+                                sheet.imagemElemento = 'http://blob.firecast.com.br/blobs/BUASUNCU_2834524/terra.png';
+                            else 
+                                sheet.imagemElemento = '';
+                            end;
+                        </event>
+                    </dataLink>
+                </flowPart>
+
+                <flowPart maxWidth="768.0">
+                    <label 
+                        align="left" 
+                        text="Nivel Ninja" 
+                        fontSize="32" 
+                        autoSize="true"
+                        wordWrap="false" 
+                        margins="{left=0, top=0, bottom=0, right=20}" 
+                    />
+                    <comboBox 
+                        align="left" 
+                        items="{'Estudante', 'Gennin', 'Chunnin', 'Jounnin', 'ANBU', 'Sannin', 'Kage'}"
+                        fontSize="18"
+                    /> 
+                </flowPart>
+
+                <flowPart maxWidth="768.0" height="508">
+                    <label 
+                        align="top"
+                        text="Personalidade" 
+                        fontSize="32" 
+                        autoSize="true"
+                        wordWrap="false" 
+                    />
+
+                    <richEdit 
+                        width="765"
+                        height="120"
+                        backgroundColor="grey" 
+                        top="40"
+                    />
+                </flowPart>
+            </flowLayout>
+        </flowPart>
+    </flowLayout>     
+</form>
