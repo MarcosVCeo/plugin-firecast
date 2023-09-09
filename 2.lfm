@@ -1,941 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form 
-    name="frmStatus" 
-    formType="sheetTemplate" 
-    dataType="DATA_TYPE_AQUI" 
-    title="Naruto No Atarashi Ninja Paradise"
-    align="client"
->
-
-    <style>
-        flowPart {
-            margins: {left=5, right=5, top=5, bottom=5};
-        }
-
-        label {
-            fontFamily:KARASHA;
-            fontStyle:bold;
-        }
-
-        textEditor {
-            fontFamily:KARASHA;
-            fontStyle:bold;
-        }
-
-        edit {
-            fontFamily:MADE TOMMY;
-        }
-    </style>
-
-    <flowLayout 
-        align="client" 
-        margins="{left=20, top=20, bottom=20, right=20}"
-        maxControlsPerLine="1"
-    >
-
-
-        <label 
-            align="left" 
-            text="Status de Personagem"
-            autoSize="true" 
-            wordWrap="false"
-            fontSize="48" 
-        />
-
-        <flowPart height="36" maxWidth="1024.0">
-
-            <image 
-                align="left" 
-                width="32" 
-                height="32" 
-                src="https://cdn-icons-png.flaticon.com/512/3548/3548916.png"
-                margins="{left=0, top=0, bottom=0, right=10}"
-            />
-            
-            <label 
-                fontSize="32" 
-                autoSize="true" 
-                wordWrap="false" 
-                align="left" 
-                text="Luta Marcial"
-            />
-
-            <comboBox 
-                align="left" 
-                items="{1, 2, 3, 4, 5}" 
-                value="1" 
-                fontSize="16" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="nivelLutaMarcial"
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                width="64"
-                field="pontosLutaMarcial"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                fontSize="16"
-                width="64"
-                field="pontosLutaMarcialBonusPassivo"
-            />
-            <label
-                text="Xp"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="xpAtualLutaMarcial"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="xpNecessarioLutaMarcial"
-            />
-            <label
-                text="Total"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="totalLutaMarcial"
-            />
-        </flowPart>
-
-        
-        <flowPart height="36" maxWidth="1024.0">
-
-            <image 
-                align="left" 
-                width="32" 
-                height="32" 
-                src="https://cdn-icons-png.flaticon.com/512/3549/3549861.png"
-                margins="{left=0, top=0, bottom=0, right=10}"
-            />
-            
-            <label 
-                fontSize="32" 
-                autoSize="true" 
-                wordWrap="false" 
-                align="left" 
-                text="Luta Belica"
-            />
-
-            <comboBox 
-                align="left" 
-                items="{1, 2, 3, 4, 5}" 
-                value="1" 
-                fontSize="16" 
-                margins="{left=32, top=0, bottom=0, right=10}"
-                width="64"
-                field="nivelLutaBelica"
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                width="64"
-                field="pontosLutaBelica"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                fontSize="16"
-                width="64"
-                field="pontosLutaBelicaBonusPassivo"
-            />
-            <label
-                text="Xp"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="xpAtualLutaBelica"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="xpNecessarioLutaBelica"
-            />
-            <label
-                text="Total"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="totalLutaBelica"
-            />
-        </flowPart>
-
-        <flowPart height="36" maxWidth="1024.0">
-
-            <image 
-                align="left" 
-                width="32" 
-                height="32" 
-                src="https://cdn-icons-png.flaticon.com/512/3548/3548868.png"
-                margins="{left=0, top=0, bottom=0, right=10}"
-            />
-            
-            <label 
-                fontSize="32" 
-                autoSize="true" 
-                wordWrap="false" 
-                align="left" 
-                text="Agilidade"
-            />
-
-            <comboBox 
-                align="left" 
-                items="{1, 2, 3, 4, 5}" 
-                value="1" 
-                fontSize="16" 
-                margins="{left=58, top=0, bottom=0, right=10}"
-                width="64"
-                field="nivelAgilidade"
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                width="64"
-                field="pontosAgilidade"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                fontSize="16"
-                width="64"
-                field="pontosAgilidadeBonusPassivo"
-            />
-            <label
-                text="Xp"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="xpAtualAgilidade"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="xpNecessarioAgilidade"
-            />
-            <label
-                text="Total"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="totalAgilidade"
-            />
-        </flowPart>
-
-        <flowPart height="36" maxWidth="1024.0">
-
-            <image 
-                align="left" 
-                width="32" 
-                height="32" 
-                src="https://cdn-icons-png.flaticon.com/128/3548/3548975.png"
-                margins="{left=0, top=0, bottom=0, right=10}"
-            />
-            
-            <label 
-                fontSize="32" 
-                autoSize="true" 
-                wordWrap="false" 
-                align="left" 
-                text="Percepção"
-            />
-
-            <comboBox 
-                align="left" 
-                items="{1, 2, 3, 4, 5}" 
-                value="1" 
-                fontSize="16" 
-                margins="{left=50, top=0, bottom=0, right=10}"
-                width="64"
-                field="nivelPercepcao"
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                width="64"
-                field="pontosPercepcao"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                fontSize="16"
-                width="64"
-                field="pontosPercepcaoBonusPassivo"
-            />
-            <label
-                text="Xp"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="xpAtualPercepcao"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="xpNecessarioPercepcao"
-            />
-            <label
-                text="Total"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="totalPercepcao"
-            />
-        </flowPart>
-
-        <flowPart height="36" maxWidth="1024.0">
-
-            <image 
-                align="left" 
-                width="32" 
-                height="32" 
-                src="https://cdn-icons-png.flaticon.com/512/3549/3549871.png"
-                margins="{left=0, top=0, bottom=0, right=10}"
-            />
-            
-            <label 
-                fontSize="32" 
-                autoSize="true" 
-                wordWrap="false" 
-                align="left" 
-                text="Resistencia"
-            />
-
-            <comboBox 
-                align="left" 
-                items="{1, 2, 3, 4, 5}" 
-                value="1" 
-                fontSize="16" 
-                margins="{left=40, top=0, bottom=0, right=10}"
-                width="64"
-                field="nivelResistencia"
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                width="64"
-                field="pontosResistencia"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                fontSize="16"
-                width="64"
-                field="pontosResistenciaBonusPassivo"
-            />
-            <label
-                text="Xp"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="xpAtualResistencia"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="xpNecessarioResistencia"
-            />
-            <label
-                text="Total"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="totalResistencia"
-            />
-        </flowPart>
-
-        <flowPart height="36" maxWidth="1024.0">
-
-            <image 
-                align="left" 
-                width="32" 
-                height="32" 
-                src="https://cdn-icons-png.flaticon.com/512/3548/3548950.png"
-                margins="{left=0, top=0, bottom=0, right=10}"
-            />
-            
-            <label 
-                fontSize="32" 
-                autoSize="true" 
-                wordWrap="false" 
-                align="left" 
-                text="Defesa"
-            />
-
-            <comboBox 
-                align="left" 
-                items="{1, 2, 3, 4, 5}" 
-                value="1" 
-                fontSize="16" 
-                margins="{left=99, top=0, bottom=0, right=10}"
-                width="64"
-                field="nivelDefesa"
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                width="64"
-                field="pontosDefesa"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                fontSize="16"
-                width="64"
-                field="pontosDefesaBonusPassivo"
-            />
-            <label
-                text="Xp"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="xpAtualDefesa"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="xpNecessarioDefesa"
-            />
-            <label
-                text="Total"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="totalDefesa"
-            />
-        </flowPart>
-
-        <flowPart height="36" maxWidth="1024.0">
-
-            <image 
-                align="left" 
-                width="32" 
-                height="32" 
-                src="https://cdn-icons-png.flaticon.com/512/3549/3549905.png"
-                margins="{left=0, top=0, bottom=0, right=10}"
-            />
-            
-            <label 
-                fontSize="32" 
-                autoSize="true" 
-                wordWrap="false" 
-                align="left" 
-                text="Destreza"
-            />
-
-            <comboBox 
-                align="left" 
-                items="{1, 2, 3, 4, 5}" 
-                value="1" 
-                fontSize="16" 
-                margins="{left=71, top=0, bottom=0, right=10}"
-                width="64"
-                field="nivelDestreza"
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                width="64"
-                field="pontosDestreza"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                fontSize="16"
-                width="64"
-                field="pontosDestrezaBonusPassivo"
-            />
-            <label
-                text="Xp"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="xpAtualDestreza"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="xpNecessarioDestreza"
-            />
-            <label
-                text="Total"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="totalDestreza"
-            />
-        </flowPart>
-
-        <flowPart height="36" maxWidth="1024.0">
-
-            <image 
-                align="left" 
-                width="32" 
-                height="32" 
-                src="https://cdn-icons-png.flaticon.com/512/3548/3548932.png"
-                margins="{left=0, top=0, bottom=0, right=10}"
-            />
-            
-            <label 
-                fontSize="32" 
-                autoSize="true" 
-                wordWrap="false" 
-                align="left" 
-                text="Controle"
-            />
-
-            <comboBox 
-                align="left" 
-                items="{1, 2, 3, 4, 5}" 
-                value="1" 
-                fontSize="16" 
-                margins="{left=76, top=0, bottom=0, right=10}"
-                width="64"
-                field="nivelControle"
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                width="64"
-                field="pontosControle"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                fontSize="16"
-                width="64"
-                field="pontosControleBonusPassivo"
-            />
-            <label
-                text="Xp"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="xpAtualControle"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="xpNecessarioControle"
-            />
-            <label
-                text="Total"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="totalControle"
-            />
-        </flowPart>
-
-        <flowPart height="36" maxWidth="1024.0">
-
-            <image 
-                align="left" 
-                width="32" 
-                height="32" 
-                src="https://cdn-icons-png.flaticon.com/512/3548/3548899.png"
-                margins="{left=0, top=0, bottom=0, right=10}"
-            />
-            
-            <label 
-                fontSize="32" 
-                autoSize="true" 
-                wordWrap="false" 
-                align="left" 
-                text="Mental"
-            />
-
-            <comboBox 
-                align="left" 
-                items="{1, 2, 3, 4, 5}" 
-                value="1" 
-                fontSize="16" 
-                margins="{left=96, top=0, bottom=0, right=10}"
-                width="64"
-                field="nivelMental"
-            />
-
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                width="64"
-                field="pontosMental"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                fontSize="16"
-                width="64"
-                field="pontosMentalBonusPassivo"
-            />
-            <label
-                text="Xp"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="xpAtualMental"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="xpNecessarioMental"
-            />
-            <label
-                text="Total"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="totalMental"
-            />
-        </flowPart>
-
-        <flowPart height="36" maxWidth="1024.0">
-
-            <image 
-                align="left" 
-                width="32" 
-                height="32" 
-                src="https://cdn-icons-png.flaticon.com/512/3548/3548884.png"
-                margins="{left=0, top=0, bottom=0, right=10}"
-            />
-            
-            <label 
-                fontSize="32" 
-                autoSize="true" 
-                wordWrap="false" 
-                align="left" 
-                text="Balanço"
-            />
-
-            <comboBox 
-                align="left" 
-                items="{1, 2, 3, 4, 5}" 
-                value="1" 
-                fontSize="16" 
-                margins="{left=88, top=0, bottom=0, right=10}"
-                width="64"
-                field="nivelBalanco"
-            />
-
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                width="64"
-                field="pontosBalanco"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                fontSize="16"
-                width="64"
-                field="pontosBalancoBonusPassivo"
-            />
-            <label
-                text="Xp"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="xpAtualBalanco"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="xpNecessarioBalanco"
-            />
-            <label
-                text="Total"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="totalBalanco"
-            />
-        </flowPart>
-
-        <flowPart height="36" maxWidth="1024.0">
-
-            <image 
-                align="left" 
-                width="32" 
-                height="32" 
-                src="https://cdn-icons-png.flaticon.com/128/3549/3549893.png"
-                margins="{left=0, top=0, bottom=0, right=10}"
-            />
-            
-            <label 
-                fontSize="32" 
-                autoSize="true" 
-                wordWrap="false" 
-                align="left" 
-                text="Carisma"
-            />
-
-            <comboBox 
-                align="left" 
-                items="{1, 2, 3, 4, 5}" 
-                value="1" 
-                fontSize="16" 
-                margins="{left=88, top=0, bottom=0, right=10}"
-                width="64"
-                field="nivelCarisma"
-            />
-
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                width="64"
-                field="pontosCarisma"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-                fontSize="16"
-                width="64"
-                field="pontosCarismaBonusPassivo"
-            />
-            <label
-                text="Xp"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-            />
-            <edit 
-                align="left" 
-                type="number" 
-                fontSize="16"
-                margins="{left=10, top=0, bottom=0, right=10}"
-                width="64"
-                field="xpAtualCarisma"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="xpNecessarioCarisma"
-            />
-            <label
-                text="Total"
-                align="left"
-                autoSize="true"
-                wordWrap="false"
-                fontSize="32" 
-                margins="{left=10, top=0, bottom=0, right=10}"
-            />
-            <edit 
-                align="left" 
-                readOnly="true" 
-                fontSize="16"
-                width="64"
-                field="totalCarisma"
-            />
-        </flowPart>
-
-    </flowLayout>
+<form name="frmStatus" formType="sheetTemplate" dataType="DATA_TYPE_AQUI" title="Naruto No Atarashi Ninja Paradise" align="client">
+	<style>
+		flowPart {
+		margins: {left=5, right=5, top=5, bottom=5};
+		}
+		
+		label {
+		fontFamily:KARASHA;
+		fontStyle:bold;
+		}
+		
+		textEditor {
+		fontFamily:KARASHA;
+		fontStyle:bold;
+		}
+		
+		edit {
+		fontFamily:MADE TOMMY;
+		}
+	</style>
+	<scrollBox left="10" top="10" align="client">
+		<flowLayout width="1024" height="768" margins="{left=20, top=20, bottom=20, right=20}" maxControlsPerLine="1">
+			<label align="left" text="Status de Personagem" autoSize="true" wordWrap="false" fontSize="48" />
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://cdn-icons-png.flaticon.com/512/3548/3548916.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Luta Marcial" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="nivelLutaMarcial" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosLutaMarcial" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosLutaMarcialBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualLutaMarcial" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioLutaMarcial" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalLutaMarcial" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://cdn-icons-png.flaticon.com/512/3549/3549861.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Luta Belica" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=32, top=0, bottom=0, right=10}" width="64" field="nivelLutaBelica" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosLutaBelica" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosLutaBelicaBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualLutaBelica" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioLutaBelica" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalLutaBelica" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://cdn-icons-png.flaticon.com/512/3548/3548868.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Agilidade" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=58, top=0, bottom=0, right=10}" width="64" field="nivelAgilidade" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosAgilidade" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosAgilidadeBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualAgilidade" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioAgilidade" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalAgilidade" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://cdn-icons-png.flaticon.com/128/3548/3548975.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Percepção" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=50, top=0, bottom=0, right=10}" width="64" field="nivelPercepcao" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosPercepcao" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosPercepcaoBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualPercepcao" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioPercepcao" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalPercepcao" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://cdn-icons-png.flaticon.com/512/3549/3549871.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Resistencia" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=40, top=0, bottom=0, right=10}" width="64" field="nivelResistencia" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosResistencia" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosResistenciaBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualResistencia" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioResistencia" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalResistencia" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://cdn-icons-png.flaticon.com/512/3548/3548950.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Defesa" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=99, top=0, bottom=0, right=10}" width="64" field="nivelDefesa" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosDefesa" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosDefesaBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualDefesa" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioDefesa" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalDefesa" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://cdn-icons-png.flaticon.com/512/3549/3549905.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Destreza" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=71, top=0, bottom=0, right=10}" width="64" field="nivelDestreza" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosDestreza" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosDestrezaBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualDestreza" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioDestreza" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalDestreza" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://cdn-icons-png.flaticon.com/512/3548/3548932.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Controle" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=76, top=0, bottom=0, right=10}" width="64" field="nivelControle" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosControle" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosControleBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualControle" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioControle" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalControle" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://cdn-icons-png.flaticon.com/512/3548/3548899.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Mental" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=96, top=0, bottom=0, right=10}" width="64" field="nivelMental" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosMental" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosMentalBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualMental" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioMental" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalMental" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://cdn-icons-png.flaticon.com/512/3548/3548884.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Balanço" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=88, top=0, bottom=0, right=10}" width="64" field="nivelBalanco" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosBalanco" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosBalancoBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualBalanco" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioBalanco" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalBalanco" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://cdn-icons-png.flaticon.com/128/3549/3549893.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Carisma" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=88, top=0, bottom=0, right=10}" width="64" field="nivelCarisma" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosCarisma" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosCarismaBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualCarisma" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioCarisma" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalCarisma" />
+			</flowPart>
+		</flowLayout>
+	</scrollBox>
 </form>

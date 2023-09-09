@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmJutsus" formType="sheetTemplate" dataType="DATA_TYPE_AQUI" title="Naruto No Atarashi Ninja Paradise" align="client">
+	<richEdit align="client" backgroundColor="grey" hitTest="true" cursor="default"/>
+</form>

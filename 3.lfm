@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmCaminhosNinja" formType="sheetTemplate" dataType="DATA_TYPE_AQUI" title="Naruto No Atarashi Ninja Paradise" align="client">
+	<scrollBox left="10" top="10" align="client">
+		<flowLayout width="1024" height="768" margins="{left=20, top=20, bottom=20, right=20}" maxControlsPerLine="1">
+			<label align="left" text="Caminhos Ninja" autoSize="true" wordWrap="false" fontSize="48" />
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="http://blob.firecast.com.br/blobs/KONBBQCH_2836396/Png_do_Ninjutsu.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Ninjutsu" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=37, top=0, bottom=0, right=10}" width="64" field="nivelNinjutsu" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosNinjutsu" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosNinjutsusuBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualNinjutsu" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioNinjutsu" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalNinjutsu" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="http://blob.firecast.com.br/blobs/BSRPLSKC_2836418/Png_Taijutsu.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Taijutsu" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=40, top=0, bottom=0, right=10}" width="64" field="nivelTaijutsu" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosTaijutsu" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosTaijutsuBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualTaijutsu" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioTaijutsu" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalTaijutsu" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="http://blob.firecast.com.br/blobs/KABQSMMR_2836439/png_genjutsu.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Genjutsu" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=33, top=0, bottom=0, right=10}" width="64" field="nivelGenjutsu" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosGenjutsu" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosGenjutsuBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualGenjutsu" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioGenjutsu" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalGenjutsu" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="http://blob.firecast.com.br/blobs/HASIFHKQ_2836502/ultimo_bagulho.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Bukijutsu" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=25, top=0, bottom=0, right=10}" width="64" field="nivelBukijutsu" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosBukijutsu" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosBukijutsuBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualBukijutsu" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioBukijutsu" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalBukijutsu" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="http://blob.firecast.com.br/blobs/CSPBDSEO_2836537/535-5359268_swirl-icon-png-nautilus-ubuntu.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Iryoujutsu" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=15, top=0, bottom=0, right=10}" width="64" field="nivelIryoujutsu" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosIryoujutsu" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosIryoujutsuBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualIryoujutsu" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioIryoujutsu" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalIryoujutsu" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="http://blob.firecast.com.br/blobs/MTJNKOTD_2836477/kinjutsu.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Kinjutsu" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=37, top=0, bottom=0, right=10}" width="64" field="nivelKinjutsu" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosKinjutsu" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosKinjutsuBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualKinjutsu" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioKinjutsu" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalKinjutsu" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="http://blob.firecast.com.br/blobs/NHTURATK_2836507/1200px-Naruto_Shiki_Fujin.svg.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Fuuinjutsu" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=14, top=0, bottom=0, right=10}" width="64" field="nivelFuuinjutsu" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosFuuinjutsu" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosFuuinjutsuBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualFuuinjutsu" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioFuuinjutsu" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalFuuinjutsu" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://static.thenounproject.com/png/5116317-200.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Doujutsu" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=37, top=0, bottom=0, right=10}" width="64" field="nivelDoujutsu" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosDoujutsu" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosDoujutsuBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualDoujutsu" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioDoujutsu" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalDoujutsu" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="http://blob.firecast.com.br/blobs/EHVACNBE_2836510/5142399_sharingans-rinnegan-and-senjutsu-k.png" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Senjutsu" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=37, top=0, bottom=0, right=10}" width="64" field="nivelSenjutsu" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosSenjutsu" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosSenjutsuBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualSenjutsu" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioSenjutsu" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalSenjutsu" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://static.wikia.nocookie.net/shinobi-life-2-reel/images/c/cf/Dimensional_Counter.png/revision/latest?cb=20210124092754" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Chakra" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=54, top=0, bottom=0, right=10}" width="64" field="nivelChakra" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosChakra" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosChakraBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualChakra" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioChakra" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalChakra" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://static.wikia.nocookie.net/shinobi-life-2-reel/images/c/c6/Smoke.png/revision/latest?cb=20210814213547" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Vitalidade" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=14, top=0, bottom=0, right=10}" width="64" field="nivelVitalidade" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosVitalidade" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosVitalidadeBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualVitalidade" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioVitalidade" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalVitalidade" />
+			</flowPart>
+			<flowPart height="36" maxWidth="1024.0">
+				<image align="left" width="32" height="32" src="https://static.wikia.nocookie.net/shinobi-life-2-reel/images/3/39/Shado.PNG/revision/latest?cb=20210105204105" margins="{left=0, top=0, bottom=0, right=10}" />
+				<label fontSize="32" autoSize="true" wordWrap="false" align="left" text="Energia" />
+				<comboBox align="left" items="{1, 2, 3, 4, 5}" value="1" fontSize="16" margins="{left=50, top=0, bottom=0, right=10}" width="64" field="nivelEnergia" />
+				<edit align="left" type="number" fontSize="16" width="64" field="pontosEnergia" />
+				<edit align="left" readOnly="true" margins="{left=10, top=0, bottom=0, right=10}" fontSize="16" width="64" field="pontosEnergiaBonusPassivo" />
+				<label text="Xp" align="left" autoSize="true" wordWrap="false" fontSize="32" />
+				<edit align="left" type="number" fontSize="16" margins="{left=10, top=0, bottom=0, right=10}" width="64" field="xpAtualEnergia" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="xpNecessarioEnergia" />
+				<label text="Total" align="left" autoSize="true" wordWrap="false" fontSize="32" margins="{left=10, top=0, bottom=0, right=10}" />
+				<edit align="left" readOnly="true" fontSize="16" width="64" field="totalEnergia" />
+			</flowPart>
+		</flowLayout>
+	</scrollBox>
+</form>
