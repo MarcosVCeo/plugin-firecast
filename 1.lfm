@@ -31,9 +31,9 @@
 								<comboBox align="left" items="{'Estudante', 'Gennin', 'Chunnin', 'Jounnin', 'ANBU', 'Sannin', 'Kage'}" fontSize="18" width="324" />
 							</flowPart>
 							<flowPart maxWidth="768.0">
-								<label align="left" text="Primeiro Elemento" autoSize="true" wordWrap="false" margins="{left=0, top=0, bottom=0, right=20}" fontSize="36" />
+								<label align="left" text="Primeiro Elemento" autoSize="true" wordWrap="false" margins="{left=0, top=0, bottom=0, right=10}" fontSize="36" />
 								<comboBox name="comboBoxElemento" align="left" items="{'', 'Ar', 'Fogo', 'Agua', 'Terra', 'Raio'}" values="{'', 'Ar', 'Fogo', 'Agua', 'Terra', 'Raio'}" value="nil" width="96" fontSize="18" field="comboBoxElemento" />
-								<image align="left" field="imagemElemento" width="36" height="36" editable="false" visible="true" margins="{left=20, top=0, bottom=0, right=0}" />
+								<image align="left" field="imagemElemento" width="36" height="36" editable="false" visible="true" margins="{left=10, top=0, bottom=0, right=48" />
 								<dataLink field="comboBoxElemento">
 									<event name="onChange">
 										local selecionado = sheet.comboBoxElemento;
@@ -53,11 +53,14 @@
 										end;
 									</event>
 								</dataLink>
+								<label align="left" text="Vida" autoSize="true" wordWrap="false" fontSize="32">
+								</label>
+								<edit align="left" fontSize="36" width="200.0" margins="{left=10, top=0, bottom=0, right=0}" />
 							</flowPart>
 							<flowPart maxWidth="768.0">
-								<label align="left" text="Segundo Elemento" autoSize="true" wordWrap="false" margins="{left=0, top=0, bottom=0, right=24}" fontSize="36" />
+								<label align="left" text="Segundo Elemento" autoSize="true" wordWrap="false" margins="{left=0, top=0, bottom=0, right=12}" fontSize="36" />
 								<comboBox name="comboBoxElementoDois" align="left" items="{'', 'Ar', 'Fogo', 'Agua', 'Terra', 'Raio'}" values="{'', 'Ar', 'Fogo', 'Agua', 'Terra', 'Raio'}" value="nil" width="96" fontSize="18" field="comboBoxElementoDois" />
-								<image align="left" field="imagemElementoDois" width="36" height="36" editable="false" visible="true" margins="{left=20, top=0, bottom=0, right=0}" />
+								<image align="left" field="imagemElementoDois" width="36" height="36" editable="false" visible="true" margins="{left=10, top=0, bottom=0, right=14" />
 								<dataLink field="comboBoxElementoDois">
 									<event name="onChange">
 										local selecionado = sheet.comboBoxElementoDois;
@@ -77,6 +80,9 @@
 										end;
 									</event>
 								</dataLink>
+								<label align="left" text="Chakra" autoSize="true" wordWrap="false" fontSize="32">
+								</label>
+								<edit align="left" fontSize="36" width="200.0" margins="{left=10, top=0, bottom=0, right=0}" />
 							</flowPart>
 						</flowLayout>
 					</flowPart>
