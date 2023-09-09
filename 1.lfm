@@ -84,6 +84,10 @@
 								</label>
 								<edit align="left" fontSize="36" width="200.0" margins="{left=10, top=0, bottom=0, right=0}" />
 							</flowPart>
+							<flowPart maxWidth="768.0">
+							<label text="Stamina" autoSize="true" wordWrap="false" fontSize="32" align="right"></label>
+							<edit align="right" fontSize="36" width="200.0" margins="{left=10, top=0, bottom=0, right=0}" ></edit>
+							</flowPart>
 						</flowLayout>
 					</flowPart>
 					<flowPart vertAlign="leading" name="imagemCla" maxWidth="256.0" height="410" margins="{left=10, top=0, bottom=0, right=0}">
